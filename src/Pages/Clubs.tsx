@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const Clubs = () => {
   return (
-    <div>Clubs</div>
-  )
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}>
+      <h1>Clubs</h1>
+      </motion.div>
+  );
 }
 
-export default Clubs
+export default Clubs;
